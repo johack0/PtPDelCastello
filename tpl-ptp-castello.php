@@ -155,16 +155,12 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
 }
 section[id]{scroll-margin-top:76px;}
 .mf-cursor{position:fixed;top:0;left:0;z-index:9999;contain:layout style size;pointer-events:none;will-change:transform;transition:opacity .3s ease,color .4s ease;color:#fff !important;mix-blend-mode:difference !important;}.mf-cursor.-pointer{color:#fff !important;}.mf-cursor.-pointer:before,.mf-cursor.-us-btn-style_1:before{animation:none !important;box-shadow:none !important;}.mf-cursor::before{content:"";position:absolute;top:-20px;left:-20px;display:block;width:40px;height:40px;transform:scale(.2);background:currentColor;border-radius:50%;transition:transform .25s ease-in-out,opacity .2s ease-in-out;}.mf-cursor.-pointer::before{transform:scale(.12);}.mf-cursor.-hidden::before{transform:scale(0);}.mf-cursor.-text::before{opacity:.85;transform:scale(2.3);}.mf-cursor.-text.-active::before{transform:scale(1.9);}.mf-cursor-text{position:absolute;top:-13px;left:-13px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#0a0a0a;opacity:0;transition:opacity .4s;}.mf-cursor.-text .mf-cursor-text{opacity:1;}@media(pointer:coarse){.mf-cursor{display:none;}}
-/* Menu sempre orizzontale: niente collasso hamburger */
-.ptp-nav-toggle{display:none !important;}
-.ptp-nav-links{position:static !important;top:auto !important;left:auto !important;right:auto !important;max-height:none !important;flex-direction:row !important;align-items:center !important;background:transparent !important;border:0 !important;box-shadow:none !important;flex:0 1 auto;min-width:0;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
-.ptp-nav-links::-webkit-scrollbar{display:none;}
-.ptp-nav-links a{border-top:0 !important;padding:0 !important;white-space:nowrap;}
-.ptp-nav a.ptp-nav-cta{margin:0 !important;padding:9px 18px !important;white-space:nowrap;}
-.ptp-nav-links a[aria-current="page"],.ptp-nav-links a.ptp-spy{box-shadow:none !important;}
-.ptp-nav:not(.spying) .ptp-nav-links a[aria-current="page"]::after,.ptp-nav-links a.ptp-spy::after{display:block !important;position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#fff;content:"";}
-@media(max-width:900px){.ptp-nav-links{gap:16px !important;}.ptp-nav-links a{font-size:12px !important;letter-spacing:.06em !important;}.ptp-nav a.ptp-nav-cta{padding:8px 14px !important;}.ptp-nav-brand .ptp-disp{font-size:16px;}}
-@media(max-width:560px){.ptp-nav-brand .ptp-disp{font-size:15px;}.ptp-nav-links{gap:13px !important;}.ptp-nav-links a{font-size:11.5px !important;}}
+/* Nav: menu inline su desktop, hamburger su mobile (<=860px). */
+/* Desktop stretto (861-1080px): comprime spaziatura per far stare tutte le voci inline */
+@media(min-width:861px) and (max-width:1080px){.ptp-nav-links{gap:16px;}.ptp-nav-links a{font-size:12px;letter-spacing:.05em;}.ptp-nav a.ptp-nav-cta{padding:8px 14px;}}
+/* Brand ridotto su mobile per lasciare spazio all'hamburger */
+@media(max-width:860px){.ptp-nav-brand .ptp-disp{font-size:15px;}}
+@media(max-width:560px){.ptp-nav-brand .ptp-disp{font-size:13px;}}
 </style>
 </head>
 <body <?php body_class('ptp-body'); ?>>
@@ -176,6 +172,7 @@ section[id]{scroll-margin-top:76px;}
       <a href="<?php echo esc_url( home_url('/') ); ?>" aria-current="page">Evento</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#programma">Programma</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#info">Info utili</a>
+      <a href="<?php echo esc_url( home_url('/') ); ?>#classifiche">Classifiche</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#foto">Foto</a>
       <a href="<?php echo esc_url( home_url('/regolamento/') ); ?>">Regolamento</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#contatti">Contatti</a>
@@ -326,6 +323,14 @@ section[id]{scroll-margin-top:76px;}
           <p>&#127837; <b>Pasta party</b> per tutti, atleti e accompagnatori! &#127881;</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="ptp-sec" id="classifiche">
+    <div class="ptp-wrap">
+      <h2 class="ptp-disp ptp-h2">Classifiche edizione 2026</h2>
+      <p class="ptp-lead">Le classifiche ufficiali della 9&ordf; edizione saranno pubblicate qui al termine della gara.</p>
+      <div class="ptp-card"><p class="t">&#127942; Presto online</p><p>Al termine della Point to Point del Castello 2026 troverai qui le classifiche complete: assoluti, categorie e tempi. Torna a trovarci dopo il <b>5 luglio</b>! &#127937;</p></div>
     </div>
   </section>
 
