@@ -169,9 +169,8 @@ section[id]{scroll-margin-top:76px;}
     <a class="ptp-nav-brand" href="<?php echo esc_url( home_url('/') ); ?>"><span class="ptp-disp">PtP del Castello</span></a>
     <button class="ptp-nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <div class="ptp-nav-links" id="ptp-nav-links">
-      <a href="<?php echo esc_url( home_url('/') ); ?>" aria-current="page">Evento</a>
-      <a href="<?php echo esc_url( home_url('/') ); ?>#programma">Programma</a>
-      <a href="<?php echo esc_url( home_url('/') ); ?>#info">Info utili</a>
+      <a href="<?php echo esc_url( home_url('/') ); ?>#programma" aria-current="page">Programma</a>
+      <a href="<?php echo esc_url( home_url('/') ); ?>#info">Info</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#classifiche">Classifiche</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#foto">Foto</a>
       <a href="<?php echo esc_url( home_url('/regolamento/') ); ?>">Regolamento</a>
