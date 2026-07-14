@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) { exit; }
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Point to Point del Castello">
 <meta property="og:title" content="Regolamento - Point to Point del Castello 2026">
-<meta property="og:description" content="Regolamento ufficiale della IX edizione - MTB Campania Championship - 37/38 km, 1100/1200 D+ - 5 luglio 2026.">
+<meta property="og:description" content="Regolamento ufficiale della IX edizione - MTB Campania Championship - 32 km, 1100/1200 D+ - 5 luglio 2026.">
 <meta property="og:url" content="<?php echo esc_url( home_url('/regolamento/') ); ?>">
 <meta property="og:image" content="https://ptpdelcastello.netsons.org/wp-content/uploads/2026/06/Point-to-Point-del-Castello-2026-Condivisione.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -192,13 +192,12 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
     <a class="ptp-nav-brand" href="<?php echo esc_url( home_url('/') ); ?>"><span class="ptp-disp">PtP del Castello</span></a>
     <button class="ptp-nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <div class="ptp-nav-links" id="ptp-nav-links">
-      <a href="<?php echo esc_url( home_url('/') ); ?>">Evento</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#programma">Programma</a>
-      <a href="<?php echo esc_url( home_url('/') ); ?>#info">Info utili</a>
-      <a href="<?php echo esc_url( home_url('/') ); ?>#foto">Foto</a>
+      <a href="<?php echo esc_url( home_url('/') ); ?>#info">Info</a>
+      <a href="<?php echo esc_url( home_url('/foto/') ); ?>">Foto</a>
       <a href="<?php echo esc_url( home_url('/regolamento/') ); ?>" aria-current="page">Regolamento</a>
       <a href="<?php echo esc_url( home_url('/') ); ?>#contatti">Contatti</a>
-      <a class="ptp-nav-cta" href="https://www.speedpassitalia.it/sp/gara/campania/2026/1002" target="_blank" rel="noopener">Iscriviti</a>
+      <a class="ptp-nav-cta" href="<?php echo esc_url( home_url('/classifiche/') ); ?>">Classifiche</a>
     </div>
   </div>
 </nav>
@@ -225,7 +224,7 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
   <section class="ptp-facts">
     <div class="ptp-wrap">
       <div class="ptp-fact"><span class="l">Data</span><span class="ptp-disp v">5 Lug 2026</span></div>
-      <div class="ptp-fact"><span class="l">Percorso</span><span class="ptp-disp v">37/38 km</span></div>
+      <div class="ptp-fact"><span class="l">Percorso</span><span class="ptp-disp v">32 km</span></div>
       <div class="ptp-fact"><span class="l">Dislivello</span><span class="ptp-disp v">1100 D+</span></div>
       <div class="ptp-fact"><span class="l">Start MTB</span><span class="ptp-disp v">09:00</span></div>
     </div>
@@ -273,13 +272,13 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
           <div class="row"><span class="k">Referente &middot; Sergio</span><span class="v"><a href="mailto:estasimtbmignano@gmail.com">estasimtbmignano@gmail.com</a><br><a href="tel:+393356092073">+39 335 609 2073</a></span></div>
           <div class="row"><span class="k">Referente &middot; Ermete</span><span class="v"><a href="tel:+393458335726">+39 345 833 5726</a><br><span class="note">Telefono / WhatsApp</span></span></div>
         </div>
-        <p><strong>Pagina gara Speedpass:</strong> <a href="https://www.speedpassitalia.it/sp/gara/campania/2026/1002/" target="_blank" rel="noopener">Iscrizioni Point to Point del Castello 2026</a></p>
+        <p><strong>Foto della gara:</strong> <a href="<?php echo esc_url( home_url('/foto/') ); ?>">Galleria foto Point to Point del Castello 2026</a></p>
 
         <h2 id="circuito">Circuito</h2>
         <p><strong>Campionato MTB Campania Championship 2026.</strong></p>
 
         <h2 id="percorso">Percorso</h2>
-        <p><strong>Percorso unico:</strong> circa <strong>37/38 km</strong>, dislivello positivo circa <strong>1.100/1.200 m D+</strong>. <strong>Difficolta':</strong> medio/alta. &middot; <strong>Vallevona dead track:</strong> 6 km. &middot; <strong>Fondo:</strong> 85% sterrato, 15% asfalto.</p>
+        <p><strong>Percorso unico:</strong> circa <strong>32 km</strong>, dislivello positivo circa <strong>1.100/1.200 m D+</strong>. <strong>Difficolta':</strong> medio/alta. &middot; <strong>Vallevona dead track:</strong> 6 km. &middot; <strong>Fondo:</strong> 85% sterrato, 15% asfalto.</p>
         <p>Il percorso prevede salite impegnative, discese tecniche, single track, passaggi presso l'antico Castello del fiume Peccia, la pineta del Sacrario, il tunnel e il centro storico della Cicuta.</p>
         <p>Tutto il percorso sara' segnalato dall'organizzazione. Dove non espressamente indicato, deve essere applicato il principio della "giusta via", proseguendo sulla via principale senza deviazioni.</p>
         <p><strong>L'abbandono volontario della strada principale a favore di variazioni del tracciato, tagli o deviazioni non autorizzate comportera' la squalifica.</strong></p>
@@ -377,7 +376,7 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
 
         <h2 id="comunicazioni">Comunicazioni ufficiali</h2>
         <p><strong>La pagina Speedpass della gara e gli eventuali canali comunicati dall'organizzazione costituiscono gli strumenti ufficiali di informazione della manifestazione.</strong></p>
-        <p><strong>Pagina gara:</strong> <a href="https://www.speedpassitalia.it/sp/gara/campania/2026/1002/" target="_blank" rel="noopener">Iscrizioni Point to Point del Castello 2026</a></p>
+        <p><strong>Foto della gara:</strong> <a href="<?php echo esc_url( home_url('/foto/') ); ?>">Galleria foto Point to Point del Castello 2026</a></p>
 
         <h2 id="norme">Norme di riferimento</h2>
         <p>Per quanto non contemplato nel presente regolamento, valgono le norme dell'ente sportivo competente, le disposizioni applicabili alla manifestazione e le decisioni del Comitato Organizzatore.</p>
@@ -414,7 +413,7 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
         <div><span class="k">Instagram</span><span class="v"><a href="https://instagram.com/estasimtb" target="_blank" rel="noopener">@estasimtb</a></span></div>
       </div>
       <div class="ptp-cta">
-        <a class="ptp-btn ptp-btn-1" href="https://www.speedpassitalia.it/sp/gara/campania/2026/1002" target="_blank" rel="noopener">Vai alle iscrizioni</a>
+        <a class="ptp-btn ptp-btn-1" href="<?php echo esc_url(home_url('/classifiche/')); ?>">Vedi le classifiche</a>
         <a class="ptp-btn ptp-btn-2" href="<?php echo esc_url( home_url('/') ); ?>">Torna all'evento</a>
       </div>
     </div>
@@ -429,7 +428,7 @@ html{scrollbar-width:thin;scrollbar-color:#3a3a3a #0a0a0a;}
 (function(){var nav=document.getElementById('ptp-nav');if(!nav)return;var btn=nav.querySelector('.ptp-nav-toggle');function set(o){nav.classList.toggle('open',o);if(btn){btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Chiudi menu':'Apri menu');}}if(btn){btn.addEventListener('click',function(){set(!nav.classList.contains('open'));});}nav.querySelectorAll('.ptp-nav-links a').forEach(function(a){a.addEventListener('click',function(){set(false);});});})();
 </script>
 <div class="ptp-fab">
-  <a class="ptp-fab-iscriviti" href="https://www.speedpassitalia.it/sp/gara/campania/2026/1002" target="_blank" rel="noopener">Iscriviti</a>
+  <a class="ptp-fab-iscriviti" href="<?php echo esc_url(home_url('/classifiche/')); ?>">Classifiche</a>
   <a class="ptp-fab-wa" href="https://wa.me/393458335726?text=Ciao%20sono%20interessato%20a%20info%20sulla%20Point%20to%20Point%20del%20castello" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </div>
 <script>
